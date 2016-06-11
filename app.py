@@ -3,17 +3,17 @@ import sys
 import urllib
 import urllib2
 import json
-
+import EpisodesUrl
 
 app = Flask(__name__)
-OMDB_URL = "http://www.omdbapi.com/?"
-
+episode = {'I':1,'II':2,'III':3,'IV':4,'V':5,'VI':6,'VII':7}
 
 @app.route('/')
 def index():
-    url = OMDB_URL+"t=Star+Wars&y=1977&plot=short&r=json"
+    url = EpisodesUrl.urls[episode['VII']]
     req = urllib2.urlopen(url)
     jsonData = json.loads(req.read())
+    posterImage = jsonData
     return render_template('index.html',movieInfo = json.dumps(jsonData,indent=4))
 
 if __name__ == '__main__':
