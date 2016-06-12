@@ -1,0 +1,23 @@
+{
+  "THE PHANTOM MENACE":{
+    "rate":1500
+  },
+  "ATTACK OF THE CLONES":{
+    "rate":1500
+  },
+  "REVENGE OF THE SITH":{
+    "rate":1500
+  },
+  "A NEW HOPE":{
+    "rate":1500
+  },
+  "THR EMPIRE STRIKES BACK":{
+    "rate":1500
+  },
+  "RETURN OF THE JEDI":{
+    "rate":1500
+  },
+  "THE FORCE AWAKENS":{
+    "rate":1500
+  }
+}
